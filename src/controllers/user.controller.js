@@ -19,7 +19,7 @@ router.post('/', async (req, res)=>{
 
         to_string.forEach((ele)=>{
             adminMail(
-                "req.body.email",
+                req.body.email,
                  ele,
                 ` ${user.first_name} ${user.last_name} has registered with u`,
                 `Please welcome ${user.first_name} ${user.last_name}`,
